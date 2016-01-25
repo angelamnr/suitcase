@@ -46,6 +46,7 @@ function suitcase_preprocess_region(&$vars) {
   } else if($vars['region'] == 'menu') {
     $vars['site_name'] = variable_get('site_name');
     $vars['linked_site_name'] = l($vars['site_name'], '<front>', array('attributes' => array('title' => t('Home')), 'html' => TRUE));
+    $vars['site_name_hidden'] = FALSE;
   }
 }
 
